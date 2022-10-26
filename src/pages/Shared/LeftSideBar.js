@@ -1,11 +1,45 @@
 
 import React from "react";
+import { FaHome, FaBook, FaHeart,  } from 'react-icons/fa';
+import { BsFillBookmarkCheckFill } from "react-icons/bs";
+import { RiLayoutGridFill } from "react-icons/ri";
 
 const LeftSideBar = () => {
     return (
-        <div  className="  w-64 h-screen bg-gradient-to-b from-violet-400 to-sky-300 ">
-            <h1>This is side bar </h1>
-        </div>
+
+        <aside className="w-60 mt-8 border-r-2 border-blue-900" aria-label="Sidebar">
+            <div className="overflow-y-auto py-4 bg-white rounded dark:bg-gray-800">
+                <ul className="space-y-2 pr-3">
+                    <li className="">
+                        <a href="#" className="flex w-9/12 items-center p-2 pl-8 py-3 text-base font-normal text-gray-900 rounded-r-lg dark:text-white hover:bg-regal-blue hover:text-white dark:hover:bg-gray-700">
+                            <FaHome/> <span className="ml-3">Home</span>
+                        </a>
+                    </li>
+                    <li className="">
+                        <a href="#" className="flex w-9/12 items-center p-2 pl-8 py-3 text-base font-normal text-gray-900 rounded-r-lg dark:text-white hover:bg-regal-blue hover:text-white dark:hover:bg-gray-700">
+                            <FaBook/> <span className="ml-3">My Courses</span>
+                        </a>
+                    </li>
+                    <li className="">
+                        <a href="#" className="flex w-9/12 items-center p-2 pl-8 py-3 text-base font-normal text-gray-900 rounded-r-lg dark:text-white hover:bg-regal-blue hover:text-white dark:hover:bg-gray-700">
+                            <FaHeart/> <span className="ml-3">Favorite</span>
+                        </a>
+                    </li>
+                    <li className="">
+                        <a href="#" className="flex w-9/12 items-center p-2 pl-8 py-3 text-base font-normal text-gray-900 rounded-r-lg dark:text-white hover:bg-regal-blue hover:text-white dark:hover:bg-gray-700">
+                            <RiLayoutGridFill/> <span className="ml-3">Test</span>
+                        </a>
+                    </li>
+                    <li className="">
+                        <a href="#" className="flex w-9/12 items-center p-2 pl-8 py-3 text-base font-normal text-gray-900 rounded-r-lg dark:text-white hover:bg-regal-blue hover:text-white dark:hover:bg-gray-700">
+                            <BsFillBookmarkCheckFill/> <span className="ml-3">Certificates</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </aside>
+
     );
 }
 export default LeftSideBar;
