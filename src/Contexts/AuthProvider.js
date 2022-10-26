@@ -13,7 +13,7 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
 
     const createUser = (email, password) => {
-        // setLoading(true);
+        setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password);
     }
     const updateUserProfile = (profile) => {
@@ -23,8 +23,31 @@ const AuthProvider = ({ children }) => {
         setLoading(true);
         return signInWithEmailAndPassword(auth, email, password);
     }
+    const logOut = () => {
+        setLoading(true);
+        return signOut(auth);
+    }
 
-    const authInfo = { user, createUser, updateUserProfile, signIn };
+    const authInfo = { user,setUser, createUser, updateUserProfile,logOut, signIn };
+
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+            console.log('inside auth state change', currentUser);
+            setUser(currentUser);
+
+            // if(currentUser === null || currentUser.emailVerified){
+            //     setUser(currentUser);
+            //     console.log('setUser', user);
+
+            // }
+            // setLoading(false);
+        });
+
+        return () => {
+            unsubscribe();
+        }
+
+    }, [])
 
     return (
         <AuthContext.Provider value={authInfo}>

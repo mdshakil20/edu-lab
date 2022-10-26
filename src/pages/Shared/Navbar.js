@@ -5,9 +5,11 @@ import { AuthContext } from "../../Contexts/AuthProvider";
 
 const Navbar = () => {
 
-    const { user, logOut } = useContext(AuthContext);
+    const { user, logOut, setUser } = useContext(AuthContext);
+    console.log(user);
 
     const handleLogOut = () => {
+        setUser(null);
         logOut()
             .then(() => { })
             .catch(error => console.error(error))
@@ -41,22 +43,22 @@ const Navbar = () => {
 
                         <li>
                             <>
-                            {
-                                user?.uid ?
-                                    <>
-                                        <span>{user?.displayName}</span>
-                                        <Button variant="light" onClick={handleLogOut}>Log out</Button>
-                                    </>
-                                    :
-                                    <>
-                                        <Link to='/login'>Login</Link>
-                                        <Link to='/signup'>Register</Link>
-                                    </>
-                            }
-                        </>
-                            <Link to={'/login'} className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                        >Login/SignUp</Link>
-                        
+                                {
+                                    user?.uid ?
+                                        <>
+                                           
+                                            <Link className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                                onClick={handleLogOut}>Log out</Link>
+                                        </>
+                                        :
+                                        <>
+                                            <Link to={'/login'} className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                            >Login/SignUp</Link>
+                                        </>
+                                }
+                            </>
+
+
                         </li>
 
                     </ul>
