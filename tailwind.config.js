@@ -10,6 +10,10 @@ module.exports = {
       colors: {
         'regal-blue': '#2F3CED',
       },
+      width: {
+        '80%': '80%',
+        '20%': '20%',
+      },
     }
   }
 }
