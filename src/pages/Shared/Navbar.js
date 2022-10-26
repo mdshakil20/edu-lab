@@ -55,7 +55,7 @@ const Navbar = () => {
                                                     onClick={handleLogOut}>Log out</Link>
                                                 <Link className="ml-3">
                                                     <img
-                                                        style={{ height: '30px' }} className="rounded-full"
+                                                        style={{ width:'30px', height: '30px' }} className="rounded-full"
                                                         src={img} />
                                                 </Link>
                                             </div>

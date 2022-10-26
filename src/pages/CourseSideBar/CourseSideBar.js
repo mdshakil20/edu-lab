@@ -24,7 +24,7 @@ const CourseSideBar = () => {
                     {
                         courses.map(course =>
                             <li key={course.id}>
-                                <Link to={''} className="flex w-11/12 items-center p-2 pl-8 py-3 text-base font-normal text-gray-900 rounded-r-lg dark:text-white hover:bg-regal-blue hover:text-white dark:hover:bg-gray-700">
+                                <Link to={course.id} className="flex w-11/12 items-center p-2 pl-8 py-3 text-base font-normal text-gray-900 rounded-r-lg dark:text-white hover:bg-regal-blue hover:text-white dark:hover:bg-gray-700">
                                     <BsFillForwardFill /> <span className="ml-3">{course.CourseTitle}</span>
                                 </Link>
                             </li>
