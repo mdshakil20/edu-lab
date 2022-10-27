@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode:"class",
   plugins: [],
 
   theme: {
@@ -13,6 +14,7 @@ module.exports = {
       width: {
         '80%': '80%',
         '20%': '20%',
+        '30%': '30%',
       },
     }
   }
