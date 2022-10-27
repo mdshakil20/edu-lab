@@ -1,0 +1,108 @@
+[debug] [2022-10-27T12:31:29.344Z] ----------------------------------------------------------------------
+[debug] [2022-10-27T12:31:29.346Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2022-10-27T12:31:29.347Z] CLI Version:   11.15.0
+[debug] [2022-10-27T12:31:29.347Z] Platform:      win32
+[debug] [2022-10-27T12:31:29.347Z] Node Version:  v16.18.0
+[debug] [2022-10-27T12:31:29.348Z] Time:          Thu Oct 27 2022 18:31:29 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-10-27T12:31:29.348Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2022-10-27T12:31:29.369Z] Failed to fetch MOTD FirebaseError: Failed to make request: unsupported proxy protocol: "192.168.49.1"
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=600275161&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-10-27T12:31:34.597Z] Error: spawn cmd ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:485:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-10-27T12:34:22.760Z] ----------------------------------------------------------------------
+[debug] [2022-10-27T12:34:22.762Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2022-10-27T12:34:22.763Z] CLI Version:   11.15.0
+[debug] [2022-10-27T12:34:22.763Z] Platform:      win32
+[debug] [2022-10-27T12:34:22.763Z] Node Version:  v16.18.0
+[debug] [2022-10-27T12:34:22.772Z] Time:          Thu Oct 27 2022 18:34:22 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-10-27T12:34:22.772Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2022-10-27T12:34:22.798Z] Failed to fetch MOTD FirebaseError: Failed to make request: unsupported proxy protocol: "192.168.49.1"
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=473441058&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-10-27T12:34:27.232Z] Error: spawn cmd ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:485:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-10-27T12:37:17.583Z] ----------------------------------------------------------------------
+[debug] [2022-10-27T12:37:17.585Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2022-10-27T12:37:17.585Z] CLI Version:   11.15.0
+[debug] [2022-10-27T12:37:17.585Z] Platform:      win32
+[debug] [2022-10-27T12:37:17.585Z] Node Version:  v16.18.0
+[debug] [2022-10-27T12:37:17.594Z] Time:          Thu Oct 27 2022 18:37:17 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-10-27T12:37:17.594Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2022-10-27T12:37:17.620Z] Failed to fetch MOTD FirebaseError: Failed to make request: unsupported proxy protocol: "192.168.49.1"
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=11562097&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-10-27T12:39:18.751Z] Error: spawn cmd ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:485:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-10-27T12:42:04.760Z] ----------------------------------------------------------------------
+[debug] [2022-10-27T12:42:04.762Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2022-10-27T12:42:04.762Z] CLI Version:   11.15.0
+[debug] [2022-10-27T12:42:04.763Z] Platform:      win32
+[debug] [2022-10-27T12:42:04.763Z] Node Version:  v16.18.0
+[debug] [2022-10-27T12:42:04.772Z] Time:          Thu Oct 27 2022 18:42:04 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-10-27T12:42:04.772Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2022-10-27T12:42:04.796Z] Failed to fetch MOTD FirebaseError: Failed to make request: unsupported proxy protocol: "192.168.49.1"
+[debug] [2022-10-27T12:52:09.580Z] ----------------------------------------------------------------------
+[debug] [2022-10-27T12:52:09.582Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login --interactive
+[debug] [2022-10-27T12:52:09.583Z] CLI Version:   11.15.0
+[debug] [2022-10-27T12:52:09.583Z] Platform:      win32
+[debug] [2022-10-27T12:52:09.583Z] Node Version:  v16.18.0
+[debug] [2022-10-27T12:52:09.584Z] Time:          Thu Oct 27 2022 18:52:09 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-10-27T12:52:09.584Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2022-10-27T12:52:09.608Z] Failed to fetch MOTD FirebaseError: Failed to make request: unsupported proxy protocol: "192.168.49.1"
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=931832141&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-10-27T12:52:22.677Z] Error: spawn cmd ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:485:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: An unexpected error has occurred.

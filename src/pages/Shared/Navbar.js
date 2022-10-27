@@ -42,7 +42,7 @@ const Navbar = () => {
             <nav className=" border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
                 <div className="container flex flex-wrap justify-between items-center mx-auto">
                     <Link to={'/'} className="flex items-center">
-                        <img src="https://i.postimg.cc/8zt9hWKF/logo.png" className="mr-3 " width={45} height={20} alt=" Logo" />
+                        <img src="https://i.postimg.cc/j50c39z1/Group-8.png" className="mr-3 " width={45} height={20} alt=" Logo" />
                         <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">EduLab</span>
                     </Link>
                     <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">

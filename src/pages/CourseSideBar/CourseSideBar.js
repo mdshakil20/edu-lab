@@ -7,7 +7,7 @@ const CourseSideBar = () => {
     const [courses, setCourses] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:7000/courses')
+        fetch('https://edu-lab-server.vercel.app/courses')
             .then(res => res.json())
             .then(data => setCourses(data))
     }

@@ -23,17 +23,17 @@ export const route = createBrowserRouter([
             {
                 path: '/courses',
                 element: <Courses></Courses>,
-                loader: () => fetch('http://localhost:7000/courses')
+                loader: () => fetch('https://edu-lab-server.vercel.app/courses')
             },
             {
                 path: '/courses/:id/:nid',
                 element: <PrivateRoute><Checkout></Checkout></PrivateRoute> ,
-                loader: ({params}) => fetch(`http://localhost:7000/courses/${params.id}/`)
+                loader: ({params}) => fetch(`https://edu-lab-server.vercel.app/courses/${params.id}/`)
             } ,
             {
                 path: '/courses/:id',
                 element: <CourseDetails></CourseDetails> ,
-                loader: ({params}) => fetch(`http://localhost:7000/courses/${params.id}`)
+                loader: ({params}) => fetch(`https://edu-lab-server.vercel.app/courses/${params.id}`)
             } ,
             {
                 path: '/faq',
