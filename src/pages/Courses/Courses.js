@@ -11,7 +11,7 @@ const Courses = () => {
             <div className="flex ">
                 <CourseSideBar className="w-1/4"></CourseSideBar>
 
-                <div className="w-80% m-8 h-80 grid gap-8 lg:grid-cols-3  md:grid-cols-2  sm:grid-cols-1 ">
+                <div className="w-80% m-8 my-10 h-80 grid gap-8 lg:grid-cols-3  md:grid-cols-2  sm:grid-cols-1 ">
                     {
                         courses.map(course =>
                             
