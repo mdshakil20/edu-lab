@@ -7,6 +7,9 @@ import Faq from "../pages/Faq/Faq";
 import Blog from "../pages/Blog/Blog";
 import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
+import NotFound from "../pages/Shared/NotFound";
+import Checkout  from "../pages/Checkout/Checkout ";
+import PrivateRoute from "./PrivateRouter/PrivateRoute";
 
 export const route = createBrowserRouter([
     {
@@ -21,8 +24,12 @@ export const route = createBrowserRouter([
                 path: '/courses',
                 element: <Courses></Courses>,
                 loader: () => fetch('http://localhost:7000/courses')
+            },
+            {
+                path: '/courses/:id/:nid',
+                element: <PrivateRoute><Checkout></Checkout></PrivateRoute> ,
+                loader: ({params}) => fetch(`http://localhost:7000/courses/${params.id}/`)
             } ,
-            ,
             {
                 path: '/courses/:id',
                 element: <CourseDetails></CourseDetails> ,
@@ -43,6 +50,12 @@ export const route = createBrowserRouter([
             {
                 path: '/signup',
                 element: <SignUp></SignUp>
+            },
+
+            //404 rout
+            {
+                path: '*',
+                element: <NotFound></NotFound>
             }
         ]
     }

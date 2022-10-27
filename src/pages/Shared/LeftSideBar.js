@@ -12,7 +12,7 @@ const LeftSideBar = () => {
             <div className="overflow-y-auto py-4 bg-white rounded dark:bg-black">
                 <ul className="space-y-2 pr-3">
                     <li className="">
-                        <Link to={'/'} className="flex w-11/12 items-center p-2 pl-8 py-3 text-base font-normal text-white rounded-r-lg dark:text-white bg-regal-blue dark:hover:bg-gray-700">
+                        <Link to={'/'} className="flex w-11/12 items-center p-2 pl-8 py-3 text-base font-normal text-white rounded-r-lg dark:text-white bg-regal-blue dark:hover:regal-blue">
                             <FaHome/> <span className="ml-3">Home</span>
                         </Link>
                     </li>

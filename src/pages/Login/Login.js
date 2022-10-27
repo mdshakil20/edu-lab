@@ -1,24 +1,35 @@
 import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Contexts/AuthProvider";
 import LeftSideBar from "../Shared/LeftSideBar";
 
 const Login = () => {
-    const {signIn,providerLogin,providerLoginGithub} = useContext(AuthContext);
+    const { signIn, setLoading, providerLogin } = useContext(AuthContext);
+    const [error, setError] = useState('');
+    const navigate = useNavigate();
+    const location = useLocation();
 
+    const from = location.state?.from?.pathname || '/';
+
+
+    //google auth provider
     const GoogleProvider = new GoogleAuthProvider();
+    //github auth provider
     const GithubProvider = new GithubAuthProvider();
 
-    const handleGithubSignIn= () => {
+    //login with github
+    const handleGithubSignIn = () => {
         providerLogin(GithubProvider)
-        .then(result => {
-            const user = result.user;
-            console.log(user);
-        })
-        .catch(error => console.error(error))
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+            })
+            .catch(error => console.error(error))
     }
 
+    //login with google
     const handleGoogleSignIn = () => {
         providerLogin(GoogleProvider)
             .then(result => {
@@ -28,33 +39,33 @@ const Login = () => {
             .catch(error => console.error(error))
     }
 
-
-    const submitHandle = event =>{
+    //submit button work function
+    const submitHandle = event => {
         event.preventDefault();
         const form = event.target;
-        const email = form.email.value; 
+        const email = form.email.value;
         const password = form.password.value;
 
         signIn(email, password)
-        .then(result => {
-            const user = result.user;
-            console.log(user);
-            form.reset();
-            // setError('');
-            // if(user.emailVerified){
-            //     navigate(from, {replace: true});
-            // }
-            // else{
-            //     toast.error('Your email is not verified. Please verify your email address.')
-            // }
-        })
-        .catch(error => {
-            console.error(error)
-            // setError(error.message);
-        })
-        .finally(() => {
-            // setLoading(false);
-        })
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                form.reset();
+                setError('');
+                if(user.email){
+                    navigate(from, {replace: true});
+                }
+                // else{
+                //     toast.error('Your email is not verified. Please verify your email address.')
+                // }
+            })
+            .catch(error => {
+                console.error(error)
+                setError(error.message);
+            })
+            .finally(() => {
+                setLoading(false);
+            })
 
 
     }
@@ -79,14 +90,15 @@ const Login = () => {
                             <div className="flex items-center justify-between">
                                 <Link className="text-sm font-medium text-primary-600 hover:underline dark:text-white">Forgot password?</Link>
                             </div>
+                            <p className="text-red-500">{error}</p>
                             <button type="submit" className="w-full text-white bg-blue-700 hover:bg-primary-700 focus:ring-4 focus:outline-none 
                                     focus:ring-primary-300 font-medium rounded-lg text-sm px-2 py-2 text-center dark:bg-primary-600
                                          dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in</button>
 
-                            <button style={{marginTop:6}} type="" onClick={handleGoogleSignIn} className="mt-0 w-full text-white bg-violet-500 hover:bg-primary-700 focus:ring-4 focus:outline-none 
+                            <button style={{ marginTop: 6 }} type="" onClick={handleGoogleSignIn} className="mt-0 w-full text-white bg-violet-500 hover:bg-primary-700 focus:ring-4 focus:outline-none 
                                     focus:ring-primary-300 font-medium rounded-lg text-sm px-2 py-2 text-center dark:bg-primary-600
                                          dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in With Google</button>
-                            <button style={{marginTop:6}} type="" onClick={handleGithubSignIn} className=" w-full text-white bg-purple-500 hover:bg-primary-700 focus:ring-4 focus:outline-none 
+                            <button style={{ marginTop: 6 }} type="" onClick={handleGithubSignIn} className=" w-full text-white bg-purple-500 hover:bg-primary-700 focus:ring-4 focus:outline-none 
                                     focus:ring-primary-300 font-medium rounded-lg text-sm px-2 py-2 text-center dark:bg-primary-600
                                          dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in With Github</button>
 
