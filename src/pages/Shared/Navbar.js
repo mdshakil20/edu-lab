@@ -39,7 +39,7 @@ const Navbar = () => {
 
     return (
         <div className="">
-            <nav className=" border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
+            <nav className=" border-gray-200 px-2 bg-slate-100 sm:px-4 py-2.5 dark:bg-gray-900">
                 <div className="container flex flex-wrap justify-between items-center mx-auto">
                     <Link to={'/'} className="flex items-center">
                         <img src="https://i.postimg.cc/j50c39z1/Group-8.png" className="mr-3 " width={45} height={20} alt=" Logo" />
